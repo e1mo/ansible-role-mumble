@@ -21,7 +21,7 @@
 
 - name: Allow to python to inherit socket binding capability
   capabilities:
-    path: /usr/bin/python2.7
+    path: /usr/bin/python3
     capability: cap_net_bind_service=ei
   when: servicefile.changed
 

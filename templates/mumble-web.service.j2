@@ -3,7 +3,7 @@ Description=Mumble-web
 
 [Service]
 SyslogIdentifier=mumble-web
-ExecStart=/usr/bin/python2.7 /usr/bin/python2-websockify \
+ExecStart=/usr/bin/python3 /usr/bin/websockify \
 {% if mumble_web_ssl_activated %}
   --cert={{ murmur_sslcert }} --key={{ murmur_sslkey }} --ssl-only \
 {% endif %}
